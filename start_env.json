@@ -1,0 +1,20 @@
+{
+  "apps" : [{
+    "name"        : "bot_sample",
+    "script"      : "index.js",
+    "instances"   : 1,
+    "exec_mode"   : "fork",
+    "cwd"         : "/home/www/bot_sample",
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "error_file"  : "/home/www/logs/bot_sample.stderr.log",
+    "out_file"  : "/home/www/logs/bot_sample.stdout.log",
+    "env": {
+      "NODE_ENV": "development",
+      "port": 8887
+    },
+    "env_production" : {
+      "NODE_ENV": "production",
+      "port": 8887
+    }
+  }]
+}
